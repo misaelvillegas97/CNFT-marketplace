@@ -1,0 +1,1 @@
+import { INft } from '@shared/models/nft.interface';export const getDummyNft = (): INft => {  return {    name: 'Dummy NFT',    image: 'https://picsum.photos/1280',    description: 'Dummy NFT',  }}

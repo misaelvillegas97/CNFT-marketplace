@@ -1,6 +1,6 @@
 {
   "name": "cf-marketplace-front",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -11,13 +11,21 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~13.1.0",
+    "@angular/cdk": "^13.1.0",
     "@angular/common": "~13.1.0",
     "@angular/compiler": "~13.1.0",
     "@angular/core": "~13.1.0",
     "@angular/forms": "~13.1.0",
+    "@angular/material": "^13.1.0",
     "@angular/platform-browser": "~13.1.0",
     "@angular/platform-browser-dynamic": "~13.1.0",
     "@angular/router": "~13.1.0",
+    "@ngrx/store": "^13.0.2",
+    "@ngx-translate/core": "^13.0.0",
+    "bootstrap": "^5.1.3",
+    "logrocket": "^2.1.2",
+    "lottie-web": "^5.8.1",
+    "ngx-lottie": "^8.0.1",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

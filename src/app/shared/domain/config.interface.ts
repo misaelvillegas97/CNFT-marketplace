@@ -1,0 +1,1 @@
+export interface IActionButton {  label: string;  icon?: string;  action: ($event: any) => void;  color?: MaterialColorType;}export type MaterialColorType = 'primary' | 'accent' | 'warn';export type textAlignType = 'left' | 'center' | 'right';
