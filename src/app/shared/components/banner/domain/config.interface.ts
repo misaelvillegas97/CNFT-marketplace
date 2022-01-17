@@ -1,0 +1,1 @@
+export interface IBannerConfig {  image: IBannerImage;  containerStyle?: Partial<CSSStyleDeclaration>;}export interface IBannerImage {  src: string;  alt?: string;  customClass?: string[];  customStyle?: Partial<CSSStyleDeclaration>;}
