@@ -1,0 +1,1 @@
+import { NgModule } from '@angular/core';import { CommonModule }        from '@angular/common';import { ImageAsyncComponent } from './components/image-async/image-async.component';@NgModule({    declarations: [        ImageAsyncComponent    ],    exports: [        ImageAsyncComponent    ],    imports: [        CommonModule    ]})export class ImageModule { }
