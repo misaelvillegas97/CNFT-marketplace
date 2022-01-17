@@ -1,1 +1,1 @@
-<div class="container w-inherit">  <div class="collections">    <ng-container *ngFor="let collection of getCollections()">      <div class="collections-card">        <cf-card [config]="collection"></cf-card>      </div>    </ng-container>  </div></div>
+<div class="container w-inherit">  <div class="collections">    <ng-container *ngFor="let collection of collections">      <div class="collections-card">        <cf-card-custom [config]="collection" (actionClick)="action($event)"></cf-card-custom>      </div>    </ng-container>  </div></div>

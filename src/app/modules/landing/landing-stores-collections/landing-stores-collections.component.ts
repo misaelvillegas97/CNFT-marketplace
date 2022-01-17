@@ -1,15 +1,1 @@
-import { Component, OnInit } from '@angular/core';
-
-@Component({
-  selector: 'cf-landing-stores-collections',
-  templateUrl: './landing-stores-collections.component.html',
-  styleUrls: ['./landing-stores-collections.component.scss']
-})
-export class LandingStoresCollectionsComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';import { getRandomImageList }                   from '@shared/utils/landing.utils';interface Food {  value: string;  viewValue: string;}@Component({  selector: 'cf-landing-stores-collections',  templateUrl: './landing-stores-collections.component.html',  styleUrls: ['./landing-stores-collections.component.scss'],  encapsulation: ViewEncapsulation.None})export class LandingStoresCollectionsComponent implements OnInit {  randomImages: string[] = [];  foods: Food[] = [    {value: 'steak-0', viewValue: 'Steak'},    {value: 'pizza-1', viewValue: 'Pizza'},    {value: 'tacos-2', viewValue: 'los últimos 7 días'},  ];  selectedFood = this.foods[2].value;  constructor() { }  ngOnInit(): void {    this.randomImages = getRandomImageList(15, '200');  }}
