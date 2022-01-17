@@ -1,10 +1,1 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-
-const routes: Routes = [];
-
-@NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
-})
-export class CollectionsExploreRoutingModule { }
+import { NgModule }                    from '@angular/core';import { RouterModule, Routes }        from '@angular/router';import { CollectionsExploreComponent } from './components/collections-explore/collections-explore.component';const routes: Routes = [  {path: '', component: CollectionsExploreComponent}];@NgModule({  imports: [ RouterModule.forChild(routes) ],  exports: [ RouterModule ]})export class CollectionsExploreRoutingModule {}
