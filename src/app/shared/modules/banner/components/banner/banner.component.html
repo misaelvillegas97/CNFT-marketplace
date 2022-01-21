@@ -1,1 +1,4 @@
-<div class="banner" [ngStyle]="config?.containerStyle || null">  <cf-image-async class="h-inherit" [src]="config.image.src" [alt]="config.image.alt || 'Banner'" [classes]="getClasses()" [styles]="getStyles()"></cf-image-async></div><!-- TODO: Create div with text for optional title or description -->
+<div class="banner" [ngStyle]="config?.containerStyle || null" [ngClass]="containerClasses || ''">
+  <cf-image-async class="h-inherit" [src]="config.image.src" [alt]="config.image.alt || 'Banner'" [classes]="getClasses()" [styles]="getStyles()"></cf-image-async>
+</div>
+<!-- TODO: Create div with text for optional title or description -->

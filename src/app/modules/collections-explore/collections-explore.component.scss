@@ -3,6 +3,14 @@
 .collections-explore {
   padding-top: 2rem;
 
+  &-banner {
+    height: 300px !important;
+
+    @include media-breakpoint-down(sm) {
+      height: 150px !important;
+    }
+  }
+
   &-title {
     display: flex;
     justify-content: center;
