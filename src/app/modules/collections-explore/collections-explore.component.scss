@@ -27,6 +27,10 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem 1rem;
     padding: 2rem 1rem;
+
+    @include media-breakpoint-down(sm) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   &-item {
