@@ -1,1 +1,119 @@
-@import '../../../../../scss/bootstrap-breakpoints';.store-collection__title{  .mat-select-panel {    position: absolute;    top: 32px;    left: 4px;    min-width: calc(100% + 22px) !important;    border-radius: 0 !important;    border: 1px solid transparent;    border-top-style: none;    box-shadow: none !important;  }  .mat-form-field-appearance-outline .mat-form-field-wrapper {    margin: 0;    padding-bottom: 0;  }  .mat-form-field-appearance-outline .mat-form-field-outline-start {    border-radius: 0 !important;    border: 1px solid transparent !important;    border-right-style: none !important;  }  .mat-form-field-appearance-outline .mat-form-field-outline-end {    border-radius: 0 !important;    border: 1px solid transparent !important;    border-left-style: none !important;  }  .mat-select-panel ng-animating {    visibility: hidden;  }  .mat-form-field-infix {    border-top: none !important;  }  .mat-form-field-appearance-outline .mat-select-arrow-wrapper {    visibility: hidden;  }}.store-collection {  &__list {    -webkit-column-count: 3;    -moz-column-count: 3;    column-count: 3;    -webkit-column-gap: 1.5rem;    -moz-column-gap: 1.5rem;    column-gap: 1.5rem;    @include media-breakpoint-down(sm) {      -webkit-column-count: 1;      -moz-column-count: 1;      column-count: 1;    }  }  &__item {    display: flex;    align-items: center;    padding: 30px 20px;    border-bottom: 1px solid #ebebeb;    transition: all 0.2s ease-in-out;    cursor: pointer;    &:hover {      border-radius: 10px;      transform: translateY(-5px);      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);      background: #fff;    }    &-counter {      font-size: 1.2rem;      font-weight: 600;      line-height: 1.5;    }    &-img {      width: 55px;      height: 55px;      object-fit: cover;      border-radius: 50%;      margin-left: 2em    }    &-data {      flex-grow: 1;      margin-left: 1rem;      &-title {        display: block;        white-space: nowrap;        font-size: 1rem;        font-weight: 600;        line-height: 1.5;      }      &-price {        display: block;        white-space: nowrap;        font-size: 1rem;        font-weight: 400;        line-height: 1.5;      }    }    &-variation {      font-size: 1.2rem;      font-weight: 500;      line-height: 1.5;      color: #65C482;    }  }}
+@import '../../../../../scss/bootstrap-breakpoints';
+
+.store-collection__title{
+  .mat-select-panel {
+    position: absolute;
+    top: 32px;
+    left: 4px;
+    min-width: calc(100% + 22px) !important;
+    border-radius: 0 !important;
+    border: 1px solid transparent;
+    border-top-style: none;
+    box-shadow: none !important;
+  }
+
+  .mat-form-field-appearance-outline .mat-form-field-wrapper {
+    margin: 0;
+    padding-bottom: 0;
+  }
+
+  .mat-form-field-appearance-outline .mat-form-field-outline-start {
+    border-radius: 0 !important;
+    border: 1px solid transparent !important;
+    border-right-style: none !important;
+  }
+
+  .mat-form-field-appearance-outline .mat-form-field-outline-end {
+    border-radius: 0 !important;
+    border: 1px solid transparent !important;
+    border-left-style: none !important;
+  }
+
+  .mat-select-panel ng-animating {
+    visibility: hidden;
+  }
+
+  .mat-form-field-infix {
+    border-top: none !important;
+  }
+
+  .mat-form-field-appearance-outline .mat-select-arrow-wrapper {
+    visibility: hidden;
+  }
+}
+
+.store-collection {
+  &__list {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 1.5rem;
+    -moz-column-gap: 1.5rem;
+    column-gap: 1.5rem;
+    @include media-breakpoint-down(sm) {
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 30px 20px;
+    border-bottom: 1px solid #ebebeb;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    @include media-breakpoint-up(sm) {
+      &:hover {
+        border-radius: 10px;
+        transform: translateY(-5px);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background: #fff;
+      }
+    }
+
+    &-counter {
+      font-size: 1.2rem;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    &-img {
+      width: 55px;
+      height: 55px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-left: 2em
+    }
+
+    &-data {
+      flex-grow: 1;
+      margin-left: 1rem;
+
+      &-title {
+        display: block;
+        white-space: nowrap;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.5;
+      }
+
+      &-price {
+        display: block;
+        white-space: nowrap;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+    }
+
+    &-variation {
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: 1.5;
+      color: #65C482;
+    }
+  }
+}
