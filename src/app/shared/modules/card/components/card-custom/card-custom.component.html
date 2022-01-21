@@ -1,0 +1,18 @@
+<div class="card-wrapper" [ngClass]="containerClasses || ''">
+  <div class="card-header"></div>
+  <cf-image-async *ngIf="config.image" [src]="config.image.src" [alt]="config.image?.alt" [styles]="getStyles()" [classes]="getClasses()"></cf-image-async>
+  <div class="card-body" [ngStyle]="cardBodyStyles">
+    <h3 class="card-body__title">{{ config.title }}</h3>
+    <div class="card-body__author" *ngIf="config.author">
+      <span class="card-body__author__by">Por: </span>
+      <a class="card-body__author_name" href="#">{{ config.author.name }}</a>
+    </div>
+    <p class="card-body__subtitle">{{ config.description }}</p>
+  </div>
+  <div class="card-actions" *ngIf="config.action || config.secondaryAction">
+    <button mat-stroked-button *ngIf="config.action" (click)="action($event)">
+      <mat-icon *ngIf="config.action.icon">{{ config.action.icon }}</mat-icon>
+      {{ config.action.label }}
+    </button>
+  </div>
+</div>

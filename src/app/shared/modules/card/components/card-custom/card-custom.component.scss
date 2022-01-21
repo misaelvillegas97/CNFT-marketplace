@@ -1,0 +1,26 @@
+@import 'src/scss/bootstrap-breakpoints';
+@import '../../scss/card';
+
+.card {
+  &-body {
+    padding: 0 10px;
+    flex-grow: 1;
+
+    &__title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    &__subtitle {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    &__author {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #666;
+    }
+  }
+}

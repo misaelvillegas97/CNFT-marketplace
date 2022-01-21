@@ -1,0 +1,15 @@
+@import 'src/scss/bootstrap-breakpoints';
+
+.card-shadow {
+  box-shadow: -5px -5px 10px #d7d7d7, 5px 5px 10px #e9e9e9;
+
+  &.animate-push-lg {
+    @include media-breakpoint-up(lg) {
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background: #fff;
+      }
+    }
+  }
+}
