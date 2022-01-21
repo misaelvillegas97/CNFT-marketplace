@@ -1,0 +1,8 @@
+<div class="collection-list-wrapper">
+  <cf-card-custom
+    class="collection-item"
+    *ngFor="let collection of collections"
+    [config]="collectionToCardConfig(collection)"
+    [containerClasses]="['card-shadow']"
+  ></cf-card-custom>
+</div>

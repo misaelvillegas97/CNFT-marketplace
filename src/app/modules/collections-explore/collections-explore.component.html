@@ -1,0 +1,16 @@
+<!-- Header img banner -->
+<cf-banner [config]="banner"></cf-banner>
+<div class="container collections-explore w-inherit">
+  <div class="collections-explore-title">
+    <h1>Explorar colecciones</h1>
+  </div>
+  <div class="collections-explore-content">
+    <mat-tab-group mat-align-tabs="center" [selectedIndex]="selectedCategoryIndex" (selectedIndexChange)="changeSelectedCategory($event)" [animationDuration]="'0ms'">
+      <mat-tab *ngFor="let category of categories" [label]="category.name">
+        <ng-template matTabContent>
+          <cf-collections-explore-list [category]="category"></cf-collections-explore-list>
+        </ng-template>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>
